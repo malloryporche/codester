@@ -90,6 +90,7 @@ a.left.carousel-control, a.right.carousel-control {
 }
 .button {
 	display: block;
+	width: 180px;
 }
 #btn_download {
 	background-color: $primary_color;
@@ -102,4 +103,33 @@ a.left.carousel-control, a.right.carousel-control {
 		background-color: #DB420E;
 		@include transition(all, 0.3s, ease, 0);;
 	}
+}
+
+//OUR WORK
+
+section#folio {
+	background-color: white;
+	h1 {
+		@include rem(78);;
+		font-weight: lighter;
+		color: $primary_color;
+		margin: 0;
+		padding: 25px 20px 10px;
+	}
+	.thumbnail {
+		margin: 0;
+		border: none;
+		border-radius: 0;
+		img {
+			width: 100%;
+		}
+	}
+	#folio_list li {
+		list-style-type: none;
+		width: 100%;
+		padding: 15px;
+		float: none;
+		clear: both;
+	}
+
 }

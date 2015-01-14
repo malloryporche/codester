@@ -5074,7 +5074,8 @@ a.left.carousel-control, a.right.carousel-control {
     padding: 0 5px 10px; }
 
 .button {
-  display: block; }
+  display: block;
+  width: 180px; }
 
 #btn_download {
   background-color: #F25C27;
@@ -5124,3 +5125,24 @@ a.left.carousel-control, a.right.carousel-control {
     -ms-transition-delay: 0;
     -o-transition-delay: 0;
     transition-delay: 0; }
+
+section#folio {
+  background-color: white; }
+  section#folio h1 {
+    font-size: 3.54545rem;
+    font-weight: lighter;
+    color: #F25C27;
+    margin: 0;
+    padding: 25px 20px 10px; }
+  section#folio .thumbnail {
+    margin: 0;
+    border: none;
+    border-radius: 0; }
+    section#folio .thumbnail img {
+      width: 100%; }
+  section#folio #folio_list li {
+    list-style-type: none;
+    width: 100%;
+    padding: 15px;
+    float: none;
+    clear: both; }
