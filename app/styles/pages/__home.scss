@@ -3,16 +3,23 @@
 //	HOME & NAVIGATION	//
 header#cdr_header {
 	padding: 0;
+	z-index: 100;
 }
 
+// #cdr_hdr_logo
 #cdr_hdr_logo {
 	height: 65px;
 	padding: 0 20px;
 }
 
+nav {
+	margin-bottom: 0;
+}
 nav.navbar.navbar-default {
 	background: $primary_color url("../img/header-bg.png") 0 0 repeat;
 	height: 100%;
+	margin-bottom: 0;
+	border-color: transparent;
 }
 .navbar-default .navbar-toggle {
 	border-color: transparent;
@@ -30,4 +37,35 @@ nav.navbar.navbar-default {
 }
 button:hover {
 	background: black;
+}
+
+
+//SECTION: HOME, CAROUSEL
+#intro {
+	padding: 35px 15px;
+}
+#cdr_hm_carousel .carousel-inner {
+	div.item:first-of-type {
+		background-size: contain;
+	}
+}
+// Carousel controls
+a.left.carousel-control {
+	background: url('../img/prev.png') 50% 50% no-repeat;
+	height: 55px;
+}
+a.right.carousel-control {
+	background: url("../img/next.png") 50% 50% no-repeat;
+}
+a.left.carousel-control, a.right.carousel-control {
+	transform: translateY(-50%);
+	top: 50%;
+	opacity: 1;
+	background-color: black;
+	width: 40px;
+	height: 40px;
+	img {
+		width: 40px;
+		height: 40px;
+	}
 }

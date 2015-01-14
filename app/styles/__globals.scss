@@ -40,12 +40,18 @@ a {
 		text-decoration: none;
 	}
 }
-
-section {
-	background: white;
+main {
+	background: url('../img/bg-content.jpg') 50% 50% repeat;
+	height: 100%;
 }
+
 
 #mp_site__container {
 	background: black;
 	padding: 10px;
+}
+
+//	COLUMN RESETS
+.col-sm-12.col-md-12.col-lg-12 {
+	padding: 0;
 }
