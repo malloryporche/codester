@@ -69,3 +69,15 @@ a.left.carousel-control, a.right.carousel-control {
 		height: 40px;
 	}
 }
+
+//CAROUSEL SLOGAN
+#cdr_hm__carousel-slogan {
+	@include rem(84);;
+	font-family: "Open Sans";
+	color: $primary_color;
+	font-weight: lighter;
+	margin: 50px 0 20px;
+	&::first-letter {
+		font-weight: bold;
+	}
+}

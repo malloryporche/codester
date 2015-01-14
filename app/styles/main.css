@@ -5013,7 +5013,7 @@ nav {
   margin-bottom: 0; }
 
 nav.navbar.navbar-default {
-  background: #313139 url("../img/header-bg.png") 0 0 repeat;
+  background: #F25C27 url("../img/header-bg.png") 0 0 repeat;
   height: 100%;
   margin-bottom: 0;
   border-color: transparent; }
@@ -5057,3 +5057,13 @@ a.left.carousel-control, a.right.carousel-control {
   a.left.carousel-control img, a.right.carousel-control img {
     width: 40px;
     height: 40px; }
+
+#cdr_hm__carousel-slogan {
+  font-family: "Open Sans"; }
+  #cdr_hm__carousel-slogan h1 {
+    margin: 50px 0 20px;
+    font-size: 3.81818rem;
+    color: #F25C27;
+    font-weight: lighter; }
+    #cdr_hm__carousel-slogan h1::first-letter {
+      font-weight: bold; }
