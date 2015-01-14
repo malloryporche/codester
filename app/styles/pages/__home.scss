@@ -1,0 +1,49 @@
+
+
+//	HOME & NAVIGATION	//
+div #mp_nav__container {
+	background: white;
+}
+#mp_nav {
+	margin: 10px 10px 0 10px;
+}
+#mp_navbar, #mp_nav {
+	background: white;
+	border: transparent;
+	@include rem(40);;
+	letter-spacing: 0.4em;
+	text-align: center;
+	max-height: 800px;
+	li {
+		margin: 40px 0;
+
+	}
+}
+.navbar-default .navbar-toggle {
+    border-color: #fff; }
+.navbar-toggle .icon-bar + .icon-bar {
+    margin-top: 6px; }
+
+#mp_mbl__navigation .icon-bar {
+	background: black;
+	width: 40px;
+}
+//SITE INTRODUCTION
+#mp_site__intro {
+	position: relative;
+	top: 35px;
+	letter-spacing: 0.1em;
+	text-align: center;
+	height: 500px;
+	h1 {
+		@include rem(120);;
+	}
+	hr {
+		max-width: 65%;
+	}
+}
+
+#home_slider {
+	background: white url('../imgs/surf.jpg') center left no-repeat;
+	height: 60%;
+}
