@@ -18,11 +18,11 @@ html, body, .container {
 
 //  DOCUMENT LEVEL FONT-SIZE ADJUSTMENTS  //
 html {
-	font-family: "Baron";
+	font-family: "Open Sans";
 	font-size: $base_html_font_size;
 }
 body {
-	font-family: "Baron";
+	font-family: "Open Sans";
 }
 @media screen and (max-width: 900px) {
 	html { font-size: 16px; }

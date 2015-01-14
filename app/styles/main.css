@@ -4967,11 +4967,11 @@ html, body, .container {
   /* Legacy iOS */ }
 
 html {
-  font-family: "Baron";
+  font-family: "Open Sans";
   font-size: 22px; }
 
 body {
-  font-family: "Baron"; }
+  font-family: "Open Sans"; }
 
 @media screen and (max-width: 900px) {
   html {
@@ -5059,11 +5059,68 @@ a.left.carousel-control, a.right.carousel-control {
     height: 40px; }
 
 #cdr_hm__carousel-slogan {
-  font-family: "Open Sans"; }
-  #cdr_hm__carousel-slogan h1 {
-    margin: 50px 0 20px;
-    font-size: 3.81818rem;
-    color: #F25C27;
-    font-weight: lighter; }
-    #cdr_hm__carousel-slogan h1::first-letter {
-      font-weight: bold; }
+  font-size: 3.81818rem;
+  font-family: "Open Sans";
+  color: #F25C27;
+  font-weight: lighter;
+  margin: 50px 0 20px;
+  padding: 0 5px; }
+  #cdr_hm__carousel-slogan::first-letter {
+    font-weight: bold; }
+  #cdr_hm__carousel-slogan + p {
+    font-family: 'Open Sans';
+    color: #707070;
+    font-size: 1rem;
+    padding: 0 5px 10px; }
+
+.button {
+  display: block; }
+
+#btn_download {
+  background-color: #F25C27;
+  padding: 10px 15px;
+  color: white;
+  letter-spacing: 0.05em;
+  margin: 0 auto;
+  -webkit-transition-property: all;
+  -moz-transition-property: all;
+  -ms-transition-property: all;
+  -o-transition-property: all;
+  transition-property: all;
+  -webkit-transition-duration: 0.3s;
+  -moz-transition-duration: 0.3s;
+  -ms-transition-duration: 0.3s;
+  -o-transition-duration: 0.3s;
+  transition-duration: 0.3s;
+  -webkit-transition-timing-function: ease;
+  -moz-transition-timing-function: ease;
+  -ms-transition-timing-function: ease;
+  -o-transition-timing-function: ease;
+  transition-timing-function: ease;
+  -webkit-transition-delay: 0;
+  -moz-transition-delay: 0;
+  -ms-transition-delay: 0;
+  -o-transition-delay: 0;
+  transition-delay: 0; }
+  #btn_download:hover {
+    background-color: #DB420E;
+    -webkit-transition-property: all;
+    -moz-transition-property: all;
+    -ms-transition-property: all;
+    -o-transition-property: all;
+    transition-property: all;
+    -webkit-transition-duration: 0.3s;
+    -moz-transition-duration: 0.3s;
+    -ms-transition-duration: 0.3s;
+    -o-transition-duration: 0.3s;
+    transition-duration: 0.3s;
+    -webkit-transition-timing-function: ease;
+    -moz-transition-timing-function: ease;
+    -ms-transition-timing-function: ease;
+    -o-transition-timing-function: ease;
+    transition-timing-function: ease;
+    -webkit-transition-delay: 0;
+    -moz-transition-delay: 0;
+    -ms-transition-delay: 0;
+    -o-transition-delay: 0;
+    transition-delay: 0; }

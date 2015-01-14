@@ -77,7 +77,29 @@ a.left.carousel-control, a.right.carousel-control {
 	color: $primary_color;
 	font-weight: lighter;
 	margin: 50px 0 20px;
+	padding: 0 5px;
 	&::first-letter {
 		font-weight: bold;
+	}
+	+ p {
+		font-family: 'Open Sans';
+		color: $gray_text;
+		@include rem(22);;
+		padding: 0 5px 10px;
+	}
+}
+.button {
+	display: block;
+}
+#btn_download {
+	background-color: $primary_color;
+	padding: 10px 15px;
+	color: white;
+	letter-spacing: 0.05em;
+	margin: 0 auto;
+	@include transition(all, 0.3s, ease, 0);;
+	&:hover {
+		background-color: #DB420E;
+		@include transition(all, 0.3s, ease, 0);;
 	}
 }
