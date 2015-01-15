@@ -16,6 +16,50 @@ html, body, .container {
        url('./fonts/webfontkit-baron-regular/baron_neue-webfont.svg') format('svg'); /* Legacy iOS */
 }
 
+@font-face {
+    font-family: 'redacted_scriptbold';
+    src: url('./fonts/redacted-script-bold.eot');
+    src: url('./fonts/redacted-script-bold.eot?#iefix') format('embedded-opentype'),
+         url('./fonts/redacted-script-bold.woff2') format('woff2'),
+         url('./fonts/redacted-script-bold.woff') format('woff'),
+         url('./fonts/redacted-script-bold.ttf') format('truetype'),
+         url('./fonts/redacted-script-bold.svg#redacted_scriptbold') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+
+
+
+@font-face {
+    font-family: 'redacted_scriptlight';
+    src: url('./fonts/redacted-script-light.eot');
+    src: url('./fonts/redacted-script-light.eot?#iefix') format('embedded-opentype'),
+         url('./fonts/redacted-script-light.woff2') format('woff2'),
+         url('./fonts/redacted-script-light.woff') format('woff'),
+         url('./fonts/redacted-script-light.ttf') format('truetype'),
+         url('./fonts/redacted-script-light.svg#redacted_scriptlight') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+
+
+
+@font-face {
+    font-family: 'redacted_scriptregular';
+    src: url('./fonts/redacted-script-regular.eot');
+    src: url('./fonts/redacted-script-regular.eot?#iefix') format('embedded-opentype'),
+         url('./fonts/redacted-script-regular.woff2') format('woff2'),
+         url('./fonts/redacted-script-regular.woff') format('woff'),
+         url('./fonts/redacted-script-regular.ttf') format('truetype'),
+         url('./fonts/redacted-script-regular.svg#redacted_scriptregular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
 //  DOCUMENT LEVEL FONT-SIZE ADJUSTMENTS  //
 html {
 	font-family: "Open Sans";
@@ -23,6 +67,9 @@ html {
 }
 body {
 	font-family: "Open Sans";
+    p {
+        font-family: "redacted_scriptregular";
+    }
 }
 @media screen and (max-width: 900px) {
 	html { font-size: 16px; }
@@ -41,7 +88,7 @@ a {
 	}
 }
 main {
-	background: url('../img/bg-content.jpg') 50% 50% repeat;
+	
 	height: 100%;
 }
 
@@ -54,4 +101,8 @@ main {
 //	COLUMN RESETS
 .col-sm-12.col-md-12.col-lg-12 {
 	padding: 0;
+}
+.center-block {
+    margin: 0 auto;
+    float: none;
 }

@@ -2,6 +2,7 @@
 
 //	HOME & NAVIGATION	//
 header#cdr_header {
+	margin-top: 30px;
 	padding: 0;
 	z-index: 100;
 }
@@ -16,10 +17,12 @@ nav {
 	margin-bottom: 0;
 }
 nav.navbar.navbar-default {
-	background: $primary_color url("../img/header-bg.png") 0 0 repeat;
+	background: $primary_color 0 0 repeat;
 	height: 100%;
 	margin-bottom: 0;
 	border-color: transparent;
+	border-radius: 0;
+	padding: 10px;
 }
 .navbar-default .navbar-toggle {
 	border-color: transparent;
@@ -43,10 +46,23 @@ button:hover {
 //SECTION: HOME, CAROUSEL
 #intro {
 	padding: 35px 15px;
+	background: url('../img/bg-content.jpg');
+	.center-block {
+		padding: 0;
+	}
 }
 #cdr_hm_carousel .carousel-inner {
+	margin: 0 auto;
+	display: block;
+	width: 100%;
 	div.item:first-of-type {
 		background-size: contain;
+	}
+	img {
+		width: 100%;
+		max-width: 100%;
+		display: block;
+		margin: 0 auto;
 	}
 }
 // Carousel controls
@@ -71,22 +87,26 @@ a.left.carousel-control, a.right.carousel-control {
 }
 
 //CAROUSEL SLOGAN
+#cdr_hm__carousel-slogan_ctr {
+	padding: 0;
+	margin: 50px 0 20px;
+}
 #cdr_hm__carousel-slogan {
-	@include rem(84);;
-	font-family: "Open Sans";
+	padding: 0 15px;
+	h1 {
+	@include rem(74);;
 	color: $primary_color;
 	font-weight: lighter;
-	margin: 50px 0 20px;
-	padding: 0 5px;
+	padding: 0;
 	&::first-letter {
-		font-weight: bold;
+		font-weight: bolder;
 	}
 	+ p {
-		font-family: 'Open Sans';
 		color: $gray_text;
-		@include rem(22);;
-		padding: 0 5px 10px;
+		@include rem(48);;
+		padding: 0 0 10px 45px;
 	}
+}
 }
 .button {
 	display: block;
@@ -105,9 +125,43 @@ a.left.carousel-control, a.right.carousel-control {
 	}
 }
 
+@media screen and (min-width: 620px) {
+	#cdr_hm__carousel-slogan {
+		display: inline-block;
+		float: left;
+		@include rem(74);;
+		+ p {
+			display: inline-block;
+			float: right;
+			border-left: 1px solid $gray_text
+			+ a {
+				display: inline-block;
+				float: right;
+			}
+		}
+	}
+	#cdr_hm__carousel-text {
+		display: inline-block;
+		float: right;
+		width: 50%;
+		border-left: 1px solid gray;
+	}
+
+}
+@media screen and (min-width: 620px) and (max-width: 767px) {
+	#intro {
+			height: 70%;
+		}
+}
+@media screen and (min-width: 767px) {
+	#intro {
+		padding: 35px 15px 85px;
+	}
+}
 //OUR WORK
 
 section#folio {
+
 	background-color: white;
 	h1 {
 		@include rem(78);;
@@ -122,14 +176,18 @@ section#folio {
 		border-radius: 0;
 		img {
 			width: 100%;
+			display: inline-block;
 		}
 	}
 	#folio_list li {
-		list-style-type: none;
-		width: 100%;
 		padding: 15px;
-		float: none;
-		clear: both;
+		float: left;
+		display: block;
+		margin: 0 auto;
 	}
+
+}
+
+@media screen and (min-width: 640px) {
 
 }
