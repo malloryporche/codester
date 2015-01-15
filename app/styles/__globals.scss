@@ -92,7 +92,15 @@ main {
 	height: 100%;
 }
 
-
+section {
+    clear: both;
+    .section_title {
+        font-weight: 300;
+        color: $primary_color;
+        @include rem(70);;
+        padding: 20px;
+    }
+}
 #mp_site__container {
 	background: black;
 	padding: 10px;

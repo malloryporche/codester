@@ -161,7 +161,7 @@ a.left.carousel-control, a.right.carousel-control {
 //OUR WORK
 
 section#folio {
-
+	margin-bottom: 30px;
 	background-color: white;
 	h1 {
 		@include rem(78);;
@@ -223,6 +223,54 @@ section#folio {
 		}
 		&:nth-of-type(7) {
 			clear: none;
+		}
+	}
+}
+
+//BANNER
+
+#banner {
+	margin-top: 50px;
+	background: $gray_background_lighter;
+	border-top: 2px solid black;
+	border-bottom: 2px solid black;
+	text-align: center;
+	padding: 20px;
+	h1 {
+		color: $primary_color;
+		@include rem(45);;
+		padding-bottom: 25px;
+		+ p {
+			margin-bottom: 40px;
+		}
+	}
+	a {
+		margin-top: 20px;
+		background-color: $primary_color;
+		padding: 5px 25px;
+		color: white;
+	}
+}
+
+//BLOG
+
+#blog {
+	.cdr_hm__blog-category {
+		h2, h3, h6 {
+			color: $primary_color;
+		}
+		font-weight: 300;
+		margin: 20px;
+		.cdr_hm__blog-date {
+			color: $gray_text;
+			@include rem(20);;
+			margin: 15px 0;
+		}
+	}
+	.cdr_hm_blog-dtls {
+			div:last-of-type {
+				float: right;
+			}
 		}
 	}
 }
