@@ -4953,11 +4953,13 @@ button.close {
 
 /* DEFINE VARIABLES & MIXINS */
 /*  GLOBAL STYLES  */
-html, body, .container {
-  height: 100%;
+html, body, .site_container {
   width: 100%;
   margin: 0;
   padding: 0; }
+
+#cdr_site__container {
+  height: 100%; }
 
 @font-face {
   font-family: 'Baron';
@@ -5324,3 +5326,43 @@ section#folio {
   float: right; }
   .cdr_hm__blog-cmmts h6 {
     text-align: right; }
+
+#main_footer .site_container .row {
+  background: url('../img/bg-content.jpg');
+  margin: 0;
+  color: #F25C27; }
+  #main_footer .site_container .row img {
+    width: 100%; }
+  #main_footer .site_container .row p:first-of-type {
+    color: white; }
+  #main_footer .site_container .row p:last-of-type {
+    color: #707070; }
+  #main_footer .site_container .row a {
+    color: #F25C27; }
+  #main_footer .site_container .row #cdr_hm__links ul li {
+    background-image: url("../img/marker-1.png") no-repeat; }
+#main_footer .site_container #cdr_hm__soc-icons {
+  background-color: white;
+  padding: 30px 0 0;
+  float: right; }
+  #main_footer .site_container #cdr_hm__soc-icons div {
+    display: inline-block;
+    float: right;
+    margin: 0 2px; }
+#main_footer .site_container #soc-icon-1 {
+  display: inline-block;
+  background-image: url("../img/soc-icon-1.png");
+  height: 30px;
+  width: 30px; }
+#main_footer .site_container #soc-icon-2 {
+  background-image: url("../img/soc-icon-2.png");
+  height: 30px;
+  width: 30px; }
+#main_footer .site_container #soc-icon-3 {
+  background-image: url("../img/soc-icon-3.png");
+  height: 30px;
+  width: 30px; }
+#main_footer .site_container #soc-icon-4 {
+  background-image: url("../img/soc-icon-4.png");
+  height: 30px;
+  width: 30px; }

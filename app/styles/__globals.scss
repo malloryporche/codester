@@ -1,11 +1,12 @@
 //	GLOBAL STYLES //
-html, body, .container {
-	height: 100%;
+html, body, .site_container {
 	width: 100%;
 	margin: 0;
 	padding: 0;
 }
-
+#cdr_site__container {
+    height: 100%;
+}
 //TYPOGRAPHY AND FONT INCLUDES
 @font-face {
   font-family: 'Baron';
@@ -114,3 +115,28 @@ section {
     margin: 0 auto;
     float: none;
 }
+
+//CAROUSELS
+.carousel-fade {
+  .carousel-inner {
+    .item {
+      opacity: 0;
+      transition-property: opacity;
+    }
+
+    .active {
+      opacity: 1;
+    }
+
+    .active.left,
+    .active.right {
+      left: 0;
+      opacity: 0;
+      z-index: 1;
+    }
+
+    .next.left,
+    .prev.right {
+      opacity: 1;
+    }
+  }

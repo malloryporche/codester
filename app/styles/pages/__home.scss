@@ -321,3 +321,58 @@ section#folio {
 		}
 		}
 
+#main_footer .site_container {
+	.row {
+		background: url('../img/bg-content.jpg');
+		margin: 0;
+		color: $primary_color;
+		img {
+			width: 100%;
+		}
+		p:first-of-type {
+			color: white;
+		}
+		p:last-of-type {
+			color: $gray_text;
+		}
+		a {
+			color: $primary_color;
+			list-style-type: 
+		}
+		#cdr_hm__links ul li {
+			background-image: url("../img/marker-1.png") no-repeat;
+
+		}
+	}
+	#cdr_hm__soc-icons {
+		background-color: white;
+		padding: 30px 0 0;
+		float: right;
+		div {
+			display: inline-block;
+			float: right;
+			margin: 0 2px;
+		}
+	}
+	#soc-icon-1 {
+		display: inline-block;
+		background-image: url("../img/soc-icon-1.png");
+		height: 30px;
+		width: 30px;
+	}
+	#soc-icon-2 {
+		background-image: url("../img/soc-icon-2.png");
+		height: 30px;
+		width: 30px;
+	}
+	#soc-icon-3 {
+		background-image: url("../img/soc-icon-3.png");
+		height: 30px;
+		width: 30px;
+	}
+	#soc-icon-4 {
+		background-image: url("../img/soc-icon-4.png");
+		height: 30px;
+		width: 30px;
+	}
+}
