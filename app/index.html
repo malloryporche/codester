@@ -17,18 +17,43 @@
     <!-- build:css styles/main.css -->
     <link rel="stylesheet" href="styles/main.css">
     <link href="http://fonts.googleapis.com/css?family=Open+Sans:400,300" rel="stylesheet" type="text/css">
-    <link rel="stylesheet" href="scripts/jquery.fancybox.css?v=2.1.5" type="text/css" media="screen" />
-    <script type="text/javascript" src="scripts/jquery.fancybox.pack.js?v=2.1.5"></script>
-    <link rel="stylesheet" href="scripts/helpers/jquery.fancybox-buttons.css?v=1.0.5" type="text/css" media="screen" />
-    <script type="text/javascript" src="scripts/jquery.fancybox-buttons.js?v=1.0.5"></script>
-    <script type="text/javascript" src="scripts/jquery.fancybox-media.js?v=1.0.6"></script>
 
-    <link rel="stylesheet" href="scripts/jquery.fancybox-thumbs.css?v=1.0.7" type="text/css" media="screen" />
-    <script type="text/javascript" src="scripts/jquery.fancybox-thumbs.js?v=1.0.7"></script>
+     <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+    <link rel="stylesheet" href="https://code.jquery.com/ui/1.11.2/jquery-ui.min.js">
+
+    <link rel="stylesheet" href="scripts/venobox.css" type="text/css" media="screen" />
+<script type="text/javascript" src="scripts/venobox.min.js"></script>
+
+
+
     <!-- endbuild -->
     
     <!-- build:js scripts/vendor/modernizr.js -->
     <script src="bower_components/modernizr/modernizr.js"></script>
+
+    <script>
+    $(document).ready(function(){
+
+    /* default settings */
+    $('.venobox').venobox(); 
+
+
+    /* custom settings */
+    $('.venobox_custom').venobox({
+        framewidth: '400px',        // default: ''
+        frameheight: '300px',       // default: ''
+        border: '10px',             // default: '0'
+        bgcolor: '#5dff5e',         // default: '#fff'
+        titleattr: 'data-title',    // default: 'title'
+        numeratio: true,            // default: false
+        infinigall: true            // default: false
+    });
+
+    
+    /* auto-open #firstlink on page load */
+    $("#firstlink").venobox().trigger('click');
+});
+    </script>
     <!-- endbuild -->
 </head>
 <body>
@@ -129,43 +154,43 @@
             <section id="folio" class="col-xs-12 col-sm-12 col-md-12 col-lg-12 col-xl-12">
                 <h1 class="section_title">Our Work</h1>
                 <ul class="clearfix" id="folio_list">
-                    <li class="col-xs-6 col-sm-4 col-md-3 3ol-lg-2">
-                    <a href="http://www.wearetrailblazers.com/two/img/wk-1-qb.jpg" class="thumbnail fancybox" rel="group">
-                        <img src="img/work/wk-1-qb.jpg" alt="work-1">
+                    <li class="col-xs-6 col-sm-4 col-md-3 3ol-lg-2 thumbnail">
+                    <a class="venobox" rel="group" href="http://wearetrailblazers.com/two/img/work/qb10.jpg">
+                        <img src="img/work/wk-1-qb.jpg" alt="Queensbridge, Australia">
                     </a>
                     </li>
                     <li class="col-xs-6 col-sm-4 col-md-3 col-lg-3 cdr_hm__portfolio_thmb ">
-                    <a href="http://www.wearetrailblazers.com/two/img/wk-2-cc.jpg" class="thumbnail fancybox" rel="group">
+                    <a href="http://wearetrailblazers.com/two/img/work/wk-2-cc.jpg" class="thumbnail fancybox" rel="group">
                         <img src="img/work/wk-2-cc.jpg" alt="work-2">
                     </a>
                     </li>
                     <li class="col-xs-6 col-sm-4 col-md-3 col-3g-2 cdr_hm__portfolio_thmb">
-                    <a href="http://www.wearetrailblazers.com/two/img/wk-3-ld.jpg" class="thumbnail fancybox" rel="group">
+                    <a href="http://wearetrailblazers.com/two/img/work/wk-3-ld.jpg" class="thumbnail fancybox" rel="group">
                         <img src="img/work/wk-3-ld.jpg" alt="work-3">
                     </a>
                     </li>
                     <li class="col-xs-6 col-sm-4 col-md-3 col-lg-3 cdr_hm__portfolio_thmb ">
-                    <a href="http://www.wearetrailblazers.com/two/www.wearetrailblazers.com/two/img/wk-4-tenerife.jpg" class="thumbnail fancybox" rel="group">
+                    <a href="http://wearetrailblazers.com/two/work/wk-4-tenerife.jpg" class="thumbnail fancybox" rel="group">
                         <img src="img/work/wk-4-tenerife.jpg" alt="work-4">
                     </a>
                     </li>
                     <li class="col-xs-6 col-sm-4 col-md-3 col-lg-3 cdr_hm__portfolio_thmb ">
-                    <a href="http://www.wearetrailblazers.com/two/img/wk-5-mx.jpg" class="thumbnail fancybox" rel="group">
+                    <a href="http://wearetrailblazers.com/two/img/work/wk-5-mx.jpg" class="thumbnail fancybox" rel="group">
                         <img src="img/work/wk-5-mx.jpg" alt="work-5">
                     </a>
                     </li>
                     <li class="col-xs-6 col-sm-4 col-md-3 col-lg-3 cdr_hm__portfolio_thmb ">
-                    <a href="http://www.wearetrailblazers.com/two/img/wk-6-ca.jpg" class="thumbnail fancybox" rel="group">
+                    <a href="http://wearetrailblazers.com/two/img/work/wk-6-ca.jpg" class="thumbnail fancybox" rel="group">
                         <img src="img/work/wk-6-ca.jpg" alt="work-6">
                     </a>
                     </li>
                     <li class="col-xs-6 col-sm-4 col-md-3 col-lg-3 cdr_hm__portfolio_thmb ">
-                    <a href="http://www.wearetrailblazers.com/two/img/wk-7-fc.jpg" class="thumbnail fancybox" rel="group">
+                    <a href="http://wearetrailblazers.com/two/img/work/wk-7-fc.jpg" class="thumbnail fancybox" rel="group">
                         <img src="img/work/wk-7-fc.jpg" alt="work-7">
                     </a>
                     </li>
                     <li class="col-xs-6 col-sm-4 col-md-3 col-lg-3 cdr_hm__portfolio_thmb ">
-                    <a href="http://www.wearetrailblazers.com/two/img/wk-8-lh.jpg" class="thumbnail fancybox" rel="group">
+                    <a href="http://wearetrailblazers.com/two/img/work/wk-8-lh.jpg" class="thumbnail fancybox" rel="group">
                         <img src="img/work/wk-8-lh.jpg" alt="work-8">
                         </a>
                     </li>
@@ -346,8 +371,8 @@
 
     <!-- build:js scripts/vendor.js -->
     <!-- bower:js -->
-    <script src="bower_components/jquery/dist/jquery.js"></script>
-    <script type="text/javascript" src="/fancybox/lib/jquery.mousewheel-3.0.6.pack.js"></script>
+
+    
 
     <script src="bower_components/bootstrap-sass-official/assets/javascripts/bootstrap/affix.js"></script>
     <script src="bower_components/bootstrap-sass-official/assets/javascripts/bootstrap/alert.js"></script>
@@ -366,11 +391,8 @@
 
     <!-- build:js scripts/main.js -->
     <script src="scripts/main.js"></script>
-    <script type="text/javascript">
-    $(document).ready(function() {
-        $(".fancybox").fancybox();
-    });
-    </script>
+
+    
     <!-- endbuild -->
 
     <!-- Google Analytics: change UA-XXXXX-X to be your site's ID. -->
