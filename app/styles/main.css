@@ -5275,14 +5275,52 @@ section#folio {
     padding: 5px 25px;
     color: white; }
 
+#blog .row {
+  margin: 0; }
 #blog .cdr_hm__blog-category {
   font-weight: 300;
-  margin: 20px; }
+  margin-bottom: 70px; }
   #blog .cdr_hm__blog-category h2, #blog .cdr_hm__blog-category h3, #blog .cdr_hm__blog-category h6 {
     color: #F25C27; }
+  #blog .cdr_hm__blog-category h2 {
+    font-size: 2.18182rem; }
   #blog .cdr_hm__blog-category .cdr_hm__blog-date {
-    color: #707070;
-    font-size: 0.90909rem;
-    margin: 15px 0; }
-#blog .cdr_hm_blog-title div:last-of-type {
+    padding: 0; }
+    #blog .cdr_hm__blog-category .cdr_hm__blog-date h5 {
+      padding: 0;
+      color: #707070;
+      font-size: 0.90909rem; }
+      #blog .cdr_hm__blog-category .cdr_hm__blog-date h5:after {
+        content: ' |'; }
+  #blog .cdr_hm__blog-category .cdr_hm__blog-title {
+    padding: 10px;
+    font-size: 0.81818rem; }
+  #blog .cdr_hm__blog-category img {
+    width: 100%;
+    vertical-align: middle; }
+  #blog .cdr_hm__blog-category p {
+    color: #707070; }
+  #blog .cdr_hm__blog-category a {
+    display: block;
+    width: 100px;
+    padding: 5px 10px;
+    background-color: #F25C27;
+    color: white;
+    font-size: 0.90909rem; }
+  #blog .cdr_hm__blog-category .cdr_hm__blog-usr {
+    padding: 0;
+    margin-left: -20px;
+    vertical-align: baseline; }
+
+.cdr_hm_blog-dtls {
+  padding: 10px; }
+  .cdr_hm_blog-dtls div:nth-of-type(2) {
+    padding: 0; }
+  .cdr_hm_blog-dtls div:last-of-type h6 {
+    float: right;
+    text-align: right; }
+
+.cdr_hm__blog-cmmts {
   float: right; }
+  .cdr_hm__blog-cmmts h6 {
+    text-align: right; }

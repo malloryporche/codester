@@ -255,22 +255,69 @@ section#folio {
 //BLOG
 
 #blog {
+	.row {
+		margin: 0;
+	}
 	.cdr_hm__blog-category {
 		h2, h3, h6 {
 			color: $primary_color;
 		}
-		font-weight: 300;
-		margin: 20px;
-		.cdr_hm__blog-date {
-			color: $gray_text;
-			@include rem(20);;
-			margin: 15px 0;
+		h2 {
+			@include rem(48);;
 		}
-	}
-	.cdr_hm_blog-dtls {
-			div:last-of-type {
-				float: right;
+		font-weight: 300;
+		margin-bottom: 70px;
+		.cdr_hm__blog-date {
+			padding: 0;
+			h5 {
+				padding: 0;
+				color: $gray_text;
+				@include rem(20);;
+				&:after {
+					content: ' |';
+				}
 			}
+		}	
+		.cdr_hm__blog-title {
+			padding: 10px;
+			@include rem(18);;
+		}
+		img {
+			width: 100%;
+			vertical-align: middle
+		}
+		p {
+			color: $gray_text;
+		}
+		a {
+			display: block;
+			width: 100px;
+			padding: 5px 10px;
+			background-color: $primary_color;
+			color: white;
+			@include rem(20);;
+		}
+		.cdr_hm__blog-usr {
+			padding: 0;
+			margin-left: -20px;
+			vertical-align: baseline;
 		}
 	}
 }
+	.cdr_hm_blog-dtls {
+		padding: 10px;
+		div:nth-of-type(2) {
+			padding: 0;
+		}
+			div:last-of-type h6 {
+				float: right;
+				text-align: right;
+			}
+		}
+		.cdr_hm__blog-cmmts {
+			float: right;
+			h6 {
+			text-align: right;
+		}
+		}
+
