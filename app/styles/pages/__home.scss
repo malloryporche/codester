@@ -51,6 +51,39 @@ button:hover {
 		padding: 0;
 	}
 }
+.carousel-fade .item {
+  opacity: 0;
+  -webkit-transition: opacity 1.0s ease-in-out;
+  -moz-transition: opacity 1.0s ease-in-out;
+  -ms-transition: opacity 1.0s ease-in-out;
+  -o-transition: opacity 1.0s ease-in-out;
+  transition: opacity 1.0s ease-in-out;
+  left: 0 !important;
+}
+
+.carousel-fade .active {
+  opacity: 1 !important;
+   -webkit-transition: opacity 2s ease-in-out;
+  -moz-transition: opacity 2s ease-in-out;
+  -ms-transition: opacity 2s ease-in-out;
+  -o-transition: opacity 2s ease-in-out;
+  transition: opacity 2s ease-in-out;
+  left: 0 !important;
+}
+
+.carousel-fade .left {
+  opacity: 0 !important;
+  -webkit-transition: opacity 1.0s ease-in-out !important;
+  -moz-transition: opacity 1.0s ease-in-out !important;
+  -ms-transition: opacity 1.0s ease-in-out !important;
+  -o-transition: opacity 1.0s ease-in-out !important;
+  transition: opacity 1.0s ease-in-out !important;
+}
+
+.carousel-fade .carousel-control {
+  opacity: 1 !important;
+}
+
 #cdr_hm_carousel .carousel-inner {
 	margin: 0 auto;
 	display: block;
