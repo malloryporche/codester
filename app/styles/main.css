@@ -5215,8 +5215,34 @@ section#folio {
       width: 100%;
       display: inline-block; }
   section#folio #folio_list li {
-    padding: 15px;
+    padding: 0;
     float: left;
     display: block;
     margin: 0 auto; }
+    section#folio #folio_list li:nth-of-type(4n) {
+      clear: none; }
+    section#folio #folio_list li:nth-of-type(7n) {
+      clear: both; }
+    section#folio #folio_list li:last-of-type {
+      clear: none; }
 
+@media screen and (min-width: 768px) and (max-width: 992px) {
+  section#folio #folio_list li:nth-of-type(4n) {
+    clear: both; }
+  section#folio #folio_list li:nth-of-type(5) {
+    clear: none; }
+  section#folio #folio_list li:nth-of-type(7n) {
+    clear: both; }
+  section#folio #folio_list li:last-of-type {
+    clear: none; }
+ }
+
+@media screen and (min-width: 993px) {
+  #folio {
+    padding: 45px 85px; }
+
+  section#folio #folio_list li:nth-of-type(5) {
+    clear: both; }
+  section#folio #folio_list li:nth-of-type(7) {
+    clear: none; }
+ }
