@@ -22,7 +22,7 @@
     <link rel="stylesheet" href="https://code.jquery.com/ui/1.11.2/jquery-ui.min.js">
 
     <link rel="stylesheet" href="scripts/venobox.css" type="text/css" media="screen" />
-<script type="text/javascript" src="scripts/venobox.min.js"></script>
+    <script type="text/javascript" src="scripts/venobox.min.js"></script>
 
 
 
@@ -30,15 +30,13 @@
     
     <!-- build:js scripts/vendor/modernizr.js -->
     <script src="bower_components/modernizr/modernizr.js"></script>
-
+    
+    <!--Initialize lightbox/gallery modal-->
     <script>
     $(document).ready(function(){
-
-    /* default settings */
+  
     $('.venobox').venobox(); 
 
-
-    /* custom settings */
     $('.venobox_custom').venobox({
         framewidth: '400px',        // default: ''
         frameheight: '300px',       // default: ''
@@ -49,148 +47,156 @@
         infinigall: true            // default: false
     });
 
-    
-    /* auto-open #firstlink on page load */
     $("#firstlink").venobox().trigger('click');
-});
+    });
     </script>
+
     <!-- endbuild -->
 </head>
+
 <body>
     <!--[if lt IE 8]>
     <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
     <![endif]-->
 
-    <!--Site Container-->
-    <div class="site_container" id="CDR_site__container">
+   
+    <div class="site_container col-xs-12 col-sm-12 col-md-12 col-lg-12 col-xl-12" id="CDR_site__container">    <!--CDR_site__container-->
 
-        <!-- Site Header -->
-        <header class="col-sm-12 col-md-12 col-lg-12" id="cdr_header">
-            <!--Site Navigation-->
-            <nav class="navbar navbar-default" role="navigtion">
-                <div class="container-fluid">
-                    <div class="navbar-header">
-                        <a href="#" id="cdr_hdr_logo" class="navbar-brand">
-                            <img src="img/logo.png" alt="codester logo">
-                        </a>
-                        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="navbar-collapse-1">
-                            <span class="sr-only">Toggle navigation</span>
-                            <span class="menu-text" id="cdr_hdr_menu-text">Menu</span>
-                            <img src="img/indicator.png" alt="indicator">
-                        </button>
-                    </div>
+   
+    <header class="row cdr_header">    <!-- cdr_header -->
+        <a class="col-xs-3 col-sm-3 col-md-3 col-lg-3 col-xl-3" href="index.html" id="cdr_brand__logo"> <!--Brand Logo, Home Link -->
+            <img src="img/logo.png" alt="brand-logo">
+        </a>
+        
+        <nav class="col-xs-3 col-sm-3 col-md-3 col-lg-3 col-xl-3 clearfix" id="cdr_secondary-nav">   <!--Begin cdr_secondary-nav-->
+            <ul class="cdr_secondary-nav row">
+                <li><a href="register.html">Login</a></li>
+                <li><a href="login.html">| Register</a></li>
+            </ul>
+        </nav>   <!--End cdr_secondary-nav-->
+       
+        
+        
+        <a class="col-xs-1 col-sm-1 col-md-1 col-lg-1 col-xl-1 cdr_primary-nav__trigger" href="#">   <!--Primary Navigation Trigger-->
+            <span class="cdr_menu-icon"></span>
+        </a>
 
-                    <div class="collapse navbar-collapse" id="navbar-collapse-1">
-                        <ul class="nav navbar-nav">
-                            <li class="active"><a href="#">Home</a></li>
-                            <li><a href="work.html">Work</a></li>
-                            <li><a href="blog.html">Blog</a></li>
-                            <li><a href="process.html" class="dropdown-toggle" data-toggle="dropdown" aria-expanded="true">Process</a>
-                                <ul class="dropdown-menu">
-                                    <li><a href="#">Process 01</a></li>
-                                    <li><a href="#">Process 02</a></li>
-                                    <li><a href="#">Process 03</a></li>
-                                </ul>
-                                </li>
-                            <li><a href="contact.html">Contact</a></li>
-                        </ul>
-                    </div>
-                </div>
-            </nav>
-            <!--End Navigation-->
+    <nav>   <!--Primary Site Navigation -->
+        <ul class="cdr_primary-nav">
+            <li class="cdr_primary-nav__label">About</li>
 
-        </header>
-        <!--End header-->
+            <li><a href="developer.html">The Developer</a></li>
+            <li><a href="flow.html">Workflow</a></li>
+            <li><a href="projects.html">Projects</a></li>
 
-        <main>
-            <section id="intro" class="col-sm-12 col-md-12 col-lg-12 col-xl-12">
-      
-                <!-- CDR_hm_carousel-->
-                <div id="cdr_hm_carousel" class="col-sm-10 col-md-10 col-lg-10 col-xl-10 center-block carousel slide carousel-fade" data-ride="carousel">
+            <li class="cdr_primary-nav__label">Collaborate</li>
+
+            <li><a href="#">Let's wOrk tOgether</a></li>
+
+            <li class="cdr_primary-nav__label">Follow</li>
+            
+            <li class="cdr_social-icon"><a href="#"><i class="fa fa-facebook-square"></i></a></li>
+            <li class="cdr_social-icon"><a href="#"><i class="fa fa-instagram"></i></a></li>
+            <li class="cdr_social-icon"><a href="#"><i class="fa fa-github-square"></i></a></li>
+            <li class="cdr_social-icon"><a href="#"><i class="fa fa-twitter-square"></i></a></li>
+
+            <li class="cdr_primary-nav__label">Contact</li>
+
+            <li class="cdr_contact-icon">
+                <img src="imgs/icons/phone.png" alt="Call">
+            </li>
+           <li class="cdr_contact-icon">
+                <img src="imgs/icons/email.png" alt="Email">
+            </li>
+            <li class="cdr_contact-icon">
+                <img src="imgs/icons/pin.png" alt="Visit">
+            </li>
+            <li class="cdr_contact-icon">  
+                <img src="imgs/icons/pencil.png" alt="Write">
+            </li>
+        </ul>
+    </nav>  <!--End Primary Site Navigation-->
+    </header>  <!--End cdr_site-header-->
+       
+        <main> <!--Start #cdr_main-content-->
+           
+            <section class="row" id="cdr_intro"> <!--section#cdr_intro-->
                     
-                    <!--Wrapper for slides-->
-                    <div class="carousel-inner">
-                        <div class="item active">
-                            <img src="img/slide-1.jpg" alt="slide-1">
+               
+                <div class="col-sm-12 col-md-12 col-lg-12 col-xl-12 center-block" id="cdr_intro__background-slider"> <!--#cdr_intro__background-slider-->
+                     
+                    <div id="cdr_intro__slogan" class="row"><!--#cdr_intro__slogan-->
+                        <div class="col-sm-12 col-md-12 col-lg-12 col-xl-12" id="cdr_intro__slogan-title">
+                            <h1>Namaskar!</h1>
                         </div>
-                        <div class="item">
-                            <img src="img/slide-2.jpg" alt="slide-2">
+                        <div class="col-sm-12 col-md-12 col-lg-12 col-xl-12" id="cdr_intro__slogan-text">
+                            <p>This tecdrlate is designed and developed over the Bootstrap frontend framework. Which is a free front-end framework for designers. Template is fully responsive and compatible with all the major browsers.</p>
                         </div>
-                        <div class="item">
-                            <img src="img/slide-3.jpg" alt="slide-3">
-                        </div>
-                        <div class="item">
-                            <img src="img/slide-4.jpg" alt="slide-4">
-                        </div>
-                        <div class="item">
-                            <img src="img/slide-5.jpg" alt="slide-5">
-                        </div>
-                        <!--Controls for slider-->
-                    <a href="#cdr_hm_carousel" class="left carousel-control" role='button' data-slide="previous">
-                    </a>
-                    <a href="#cdr_hm_carousel" class="right carousel-control" role='button' data-slide="next">
-                    </a>
-                    </div>
-                
-                <!--End Carousel-->
-          
-                <!--Carousel Slogan-->
-                <div id="cdr_hm__carousel-slogan_ctr">
-                
-                <div class="row">    
-                    <div class="col-sm-6 col-md-6 col-lg-6 col-xl-6" id="cdr_hm__carousel-slogan">
-                        <h1>Namaskar!</h1>
-                    </div>
-                    <div class="col-sm-6 col-md-6 col-lg-6 col-xl-6" id="cdr_hm__carousel-text">
-                        <p>This template is designed and developed over the Bootstrap frontend framework. Which is a free front-end framework for designers. Template is fully responsive and compatible with all the major browsers.</p>
-                        <a href="#"class="button" id="btn_download">Download Bootstrap</a>
-                    </div>
-                </div>
-                </div>
-                </div>
+                    </div><!--End #cdr_intro__slogan-->
+                    
 
+                </div><!--End #cdr_intro__background-slider-->
+                
             </section>
 
             <section id="folio" class="col-xs-12 col-sm-12 col-md-12 col-lg-12 col-xl-12">
                 <h1 class="section_title">Our Work</h1>
                 <ul class="clearfix" id="folio_list">
-                    <li class="col-xs-6 col-sm-4 col-md-3 3ol-lg-2 thumbnail">
-                    <a class="venobox" rel="group" href="http://wearetrailblazers.com/two/img/work/qb10.jpg">
+                    <li class="col-xs-3 col-sm-4 col-md-3 3ol-lg-2 thumbnail">
+                    <a class="venobox" data-gall="myGallery" href="http://wearetrailblazers.com/two/img/work/qb10.jpg">
                         <img src="img/work/wk-1-qb.jpg" alt="Queensbridge, Australia">
                     </a>
+                        <a href="http://wearetrailblazers.com/two/img/work/qb2.jpg" class="venobox" data-gall="myGallery"></a>
+                        <a href="http://wearetrailblazers.com/two/img/work/qb3.jpg" class="venobox" data-gall="myGallery"></a>
+                        <a href="http://wearetrailblazers.com/two/img/work/qb4.jpg" class="venobox" data-gall="myGallery"></a>
+                        <a href="http://wearetrailblazers.com/two/img/work/qb5.jpg" class="venobox" data-gall="myGallery"></a>
+                        <a href="http://wearetrailblazers.com/two/img/work/qb6.jpg" class="venobox" data-gall="myGallery"></a>
+                        <a href="http://wearetrailblazers.com/two/img/work/qb7.jpg" class="venobox" data-gall="myGallery"></a>
+                        <a href="http://wearetrailblazers.com/two/img/work/qb8.jpg" class="venobox" data-gall="myGallery"></a>
+                        <a href="http://wearetrailblazers.com/two/img/work/qb9.jpg" class="venobox" data-gall="myGallery"></a>
+                        <a href="http://wearetrailblazers.com/two/img/work/qb10.jpg" class="venobox" data-gall="myGallery"></a>
                     </li>
                     <li class="col-xs-6 col-sm-4 col-md-3 col-lg-3 cdr_hm__portfolio_thmb ">
-                    <a href="http://wearetrailblazers.com/two/img/work/wk-2-cc.jpg" class="thumbnail fancybox" rel="group">
+                    <a href="http://wearetrailblazers.com/two/img/work/wk-2-cc.jpg" class="thumbnail venobox" rel="group">
                         <img src="img/work/wk-2-cc.jpg" alt="work-2">
                     </a>
                     </li>
+                        <a href="http://wearetrailblazers.com/two/img/work/mx2.jpg" class="venobox" data-gall="myGallery"></a>
+                        <a href="http://wearetrailblazers.com/two/img/work/mx3.jpg" class="venobox" data-gall="myGallery"></a>
+                        <a href="http://wearetrailblazers.com/two/img/work/mx4.jpg" class="venobox" data-gall="myGallery"></a>
+                        <a href="http://wearetrailblazers.com/two/img/work/mx5.jpg" class="venobox" data-gall="myGallery"></a>
+                        <a href="http://wearetrailblazers.com/two/img/work/mx6.jpg" class="venobox" data-gall="myGallery"></a>
+                        <a href="http://wearetrailblazers.com/two/img/work/mx7.jpg" class="venobox" data-gall="myGallery"></a>
+                        <a href="http://wearetrailblazers.com/two/img/work/mx8.jpg" class="venobox" data-gall="myGallery"></a>
+                        <a href="http://wearetrailblazers.com/two/img/work/mx9.jpg" class="venobox" data-gall="myGallery"></a>
+                        <a href="http://wearetrailblazers.com/two/img/work/mx10.jpg" class="venobox" data-gall="myGallery"></a>
                     <li class="col-xs-6 col-sm-4 col-md-3 col-3g-2 cdr_hm__portfolio_thmb">
-                    <a href="http://wearetrailblazers.com/two/img/work/wk-3-ld.jpg" class="thumbnail fancybox" rel="group">
+                    <a href="http://wearetrailblazers.com/two/img/work/wk-3-ld.jpg" class="thumbnail venobox" rel="group">
                         <img src="img/work/wk-3-ld.jpg" alt="work-3">
                     </a>
                     </li>
                     <li class="col-xs-6 col-sm-4 col-md-3 col-lg-3 cdr_hm__portfolio_thmb ">
-                    <a href="http://wearetrailblazers.com/two/work/wk-4-tenerife.jpg" class="thumbnail fancybox" rel="group">
+                    <a href="http://wearetrailblazers.com/two/work/wk-4-tenerife.jpg" class="thumbnail venobox" rel="group">
                         <img src="img/work/wk-4-tenerife.jpg" alt="work-4">
                     </a>
                     </li>
                     <li class="col-xs-6 col-sm-4 col-md-3 col-lg-3 cdr_hm__portfolio_thmb ">
-                    <a href="http://wearetrailblazers.com/two/img/work/wk-5-mx.jpg" class="thumbnail fancybox" rel="group">
+                    <a href="http://wearetrailblazers.com/two/img/work/wk-5-mx.jpg" class="thumbnail venobox" rel="group">
                         <img src="img/work/wk-5-mx.jpg" alt="work-5">
                     </a>
                     </li>
                     <li class="col-xs-6 col-sm-4 col-md-3 col-lg-3 cdr_hm__portfolio_thmb ">
-                    <a href="http://wearetrailblazers.com/two/img/work/wk-6-ca.jpg" class="thumbnail fancybox" rel="group">
+                    <a href="http://wearetrailblazers.com/two/img/work/wk-6-ca.jpg" class="thumbnail venobox" rel="group">
                         <img src="img/work/wk-6-ca.jpg" alt="work-6">
                     </a>
                     </li>
                     <li class="col-xs-6 col-sm-4 col-md-3 col-lg-3 cdr_hm__portfolio_thmb ">
-                    <a href="http://wearetrailblazers.com/two/img/work/wk-7-fc.jpg" class="thumbnail fancybox" rel="group">
+                    <a href="http://wearetrailblazers.com/two/img/work/wk-7-fc.jpg" class="thumbnail venobox" rel="group">
                         <img src="img/work/wk-7-fc.jpg" alt="work-7">
                     </a>
                     </li>
                     <li class="col-xs-6 col-sm-4 col-md-3 col-lg-3 cdr_hm__portfolio_thmb ">
-                    <a href="http://wearetrailblazers.com/two/img/work/wk-8-lh.jpg" class="thumbnail fancybox" rel="group">
+                    <a href="http://wearetrailblazers.com/two/img/work/wk-8-lh.jpg" class="thumbnail venobox" rel="group">
                         <img src="img/work/wk-8-lh.jpg" alt="work-8">
                         </a>
                     </li>
