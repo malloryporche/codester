@@ -4,6 +4,11 @@ html, body, .site_container {
 	margin: 0;
 	padding: 0;
 }
+main {
+    position: relative;
+    top: 30px;
+    margin: 30px;
+}
 #cdr_site__container {
     height: 100%;
 }
